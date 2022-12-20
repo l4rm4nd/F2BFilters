@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  fail2ban:
+    image: crazymax/fail2ban:latest
+    container_name: fail2ban
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    environment:
+      - TZ=Europe/Berlin
+      - F2B_DB_PURGE_AGE=14d
+    network_mode: host
+    restart: unless-stopped
+    volumes:
+      - ./data:/data
+      - /path/to/nginx-proxy-manager/data/logs:/var/log/npm
+      - /path/to/vaultwarden/data/logs:/var/log/vaultwarden

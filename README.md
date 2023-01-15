@@ -1,5 +1,9 @@
 # F2BNPM
-Dockerized Fail2ban with filters and actions for [Nginx Proxy Manager](https://github.com/NginxProxyManager/nginx-proxy-manager) and [Vaultwarden](https://github.com/dani-garcia/vaultwarden) log formats.
+Dockerized Fail2ban with filters and actions for the following log formats of:
+
+- [Nginx Proxy Manager](https://github.com/NginxProxyManager/nginx-proxy-manager)
+- [Traefik](https://github.com/traefik/traefik)
+- [Vaultwarden](https://github.com/dani-garcia/vaultwarden)
 
 # Usage
 
@@ -61,7 +65,8 @@ The following filters are provided by this repository:
 - npm-general-badbots.conf
   - Filter to identify HTTP requests with well-known malicious user agents
 - npm-general-forceful-browsing.conf
-  - Filter to identify forceful browsing attacks (multitude of 404, 403 etc.)
+  - Filter to identify forceful browsing attacks (multitude of 404, 403 etc.) in NPM logs
+- traefik-general-forceful-browsing.conf
+  - Filter to identify forceful browsing attacks (multitude of 404, 403 etc.) in Traefik logs with user agent logging
 - vaultwarden_login_bruteforce.conf
   - Filter to identify brute-force attacks on the login area of vaultwarden (Bitwarden alternative written in Rust)
-

@@ -1,4 +1,4 @@
-# F2BNPM
+# F2BFilters
 Dockerized Fail2ban with filters and actions for the following log formats of:
 
 - [Nginx Proxy Manager](https://github.com/NginxProxyManager/nginx-proxy-manager)
@@ -9,10 +9,10 @@ Dockerized Fail2ban with filters and actions for the following log formats of:
 
 ````
 # clone this repository
-git clone https://github.com/l4rm4nd/F2BNPM
+git clone https://github.com/l4rm4nd/F2BFilters
 
 # change directory
-cd F2BNPM
+cd F2BFilters
 
 # adjust the docker-compose.yml as well as jail.d/, action.d/ and filter.d/ configs
 

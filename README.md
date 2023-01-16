@@ -2,7 +2,7 @@
 Dockerized Fail2ban with filters and actions for the following log formats of:
 
 - [Nginx Proxy Manager](https://github.com/NginxProxyManager/nginx-proxy-manager)
-- [Traefik](https://github.com/traefik/traefik)
+- [Traefik (JSON & CLM)](https://github.com/traefik/traefik)
 - [Vaultwarden](https://github.com/dani-garcia/vaultwarden)
 
 # Usage

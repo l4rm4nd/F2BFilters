@@ -15,6 +15,7 @@ git clone https://github.com/l4rm4nd/F2BFilters
 cd F2BFilters
 
 # adjust the docker-compose.yml as well as jail.d/, action.d/ and filter.d/ configs
+# especially enable your preferred jails in the jail.d/jail.local config
 
 # run the fail2ban docker container
 docker compose up -d

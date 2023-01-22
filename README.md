@@ -68,5 +68,7 @@ The following filters are provided by this repository:
   - Filter to identify forceful browsing attacks (multitude of 404, 403 etc.) in NPM logs
 - traefik-general-forceful-browsing.conf
   - Filter to identify forceful browsing attacks (multitude of 404, 403 etc.) in Traefik logs with user agent logging
+- traefik-general-badbots.conf
+  - Filter to identify HTTP requests with well-known malicious user agents
 - vaultwarden_login_bruteforce.conf
   - Filter to identify brute-force attacks on the login area of vaultwarden (Bitwarden alternative written in Rust)

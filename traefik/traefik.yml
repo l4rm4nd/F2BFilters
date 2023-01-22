@@ -106,7 +106,7 @@ entryPoints:
         domains:
           - main: example.com
             sans:
-              - '*.example.de'
+              - '*.example.com'
           #- main: example2.com
           #  sans:
           #    - '*.example2.com'

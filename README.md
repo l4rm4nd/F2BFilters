@@ -16,6 +16,7 @@ cd F2BFilters
 
 # adjust the docker-compose.yml as well as jail.d/, action.d/ and filter.d/ configs
 # especially enable your preferred jails in the jail.d/jail.local config
+# you can find example docker-compose.yml files for npm, vaultwarden and traefik in the examples directory
 
 # run the fail2ban docker container
 docker compose up -d

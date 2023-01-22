@@ -15,4 +15,5 @@ services:
     volumes:
       - ./data:/data
       - /path/to/nginx-proxy-manager/data/logs:/var/log/npm
+      - /path/to/traefik/data/logs:/var/log/traefik
       - /path/to/vaultwarden/data/logs:/var/log/vaultwarden

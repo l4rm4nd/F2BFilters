@@ -29,9 +29,9 @@ log:
 #    traefik-modsecurity-plugin:
 #      moduleName: "github.com/acouvreur/traefik-modsecurity-plugin"
 #      version: "v1.2.1"
-#     cache:
-#       moduleName: "github.com/traefik/plugin-simplecache"
-#       version: "v0.2.1"
+#    cache:
+#      moduleName: "github.com/traefik/plugin-simplecache"
+#      version: "v0.2.1"
 
 # Configuring Multiple Filters
 accessLog:

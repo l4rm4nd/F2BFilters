@@ -51,10 +51,16 @@ The following actions are provided by this repository:
   - Used to ban threat actor IP addresses on Cloudflare via API
 - action-ban-docker-badbots.conf
   - Used to ban threat actors with malicious user agents
+  - Requires DOCKER-USER chain, iptables 1.3.5 or later and kernel support for string matching
+  - Note: nftables do not support iptable's string matching extension
 - action-ban-docker-forceful-browsing.conf
   - Used to ban threat actors that cause a multitude of 401, 403, 404 etc. errors
+  - Requires DOCKER-USER chain, iptables 1.3.5 or later and kernel support for string matching
+  - Note: nftables do not support iptable's string matching extension
 - action-ban-docker-vaultwarden-bruteforce.conf
   - Used to ban threat actors conducting brute-force attacks on the login of vaultwarden password manager
+  - Requires DOCKER-USER chain, iptables 1.3.5 or later and kernel support for string matching
+  - Note: nftables do not support iptable's string matching extension  
 - telegram_notif.sh
   - Used to send notifications via Telegram messenger
 

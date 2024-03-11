@@ -5,6 +5,13 @@ Dockerized Fail2ban with filters and actions for the following log formats of:
 - [Traefik (JSON & CLM)](https://github.com/traefik/traefik)
 - [Vaultwarden](https://github.com/dani-garcia/vaultwarden)
 
+> [!CAUTION]
+> This repository is based on the use of iptables and not nftables!
+> 
+> Nftables do not support string matching. Therefore, we cannot block IP packets sent from reverse proxy to docker containers by inspecting the X-Forwarded-For header.
+> 
+> You have to switch your OS to use the legacy iptables. Read [here](https://wiki.debian.org/nftables?ref=blog.lrvt.de#Reverting_to_legacy_xtables).
+
 # Usage
 
 ````

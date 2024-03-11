@@ -15,6 +15,12 @@ Dockerized Fail2ban with filters and actions for the following log formats of:
 # Usage
 
 ````
+# switch to legacy iptables and disable nftables (caution, know what you are doing)
+sudo update-alternatives --set iptables /usr/sbin/iptables-legacy
+sudo update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy
+sudo update-alternatives --set arptables /usr/sbin/arptables-legacy
+sudo update-alternatives --set ebtables /usr/sbin/ebtables-legacy
+
 # clone this repository
 git clone https://github.com/l4rm4nd/F2BFilters
 

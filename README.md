@@ -11,6 +11,8 @@ Dockerized Fail2ban with filters and actions for the following log formats of:
 > Nftables do not support string matching. Therefore, we cannot block IP packets sent from reverse proxy to docker containers by inspecting the X-Forwarded-For header.
 > 
 > You have to switch your OS to use the legacy iptables. Read [here](https://wiki.debian.org/nftables?ref=blog.lrvt.de#Reverting_to_legacy_xtables).
+>
+> Alternatively, use the CloudFlare API to ban a threat actor's IP address. This is viable solution, if you already use CF and cannot use legacy iptables.
 
 # Usage
 
